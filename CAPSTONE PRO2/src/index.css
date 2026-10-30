@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-ink: #12241c;
+  --color-ink-soft: #2c4338;
+  --color-paper: #f3ece0;
+  --color-paper-2: #e7dcc8;
+  --color-cream: #faf6ee;
+  --color-forest: #1c4a38;
+  --color-leaf: #2f7a55;
+  --color-gold: #c9922a;
+  --color-saffron: #d86a22;
+  --color-stamp: #9b2c24;
+  --color-pass: #1f6b45;
+  --color-review: #b77816;
+  --color-fail: #9b2c24;
+  --color-line: #d7cbb6;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+::selection {
+  background: #e7c56a;
+  color: #12241c;
+}
+
+.paper-grid {
+  background-image:
+    linear-gradient(rgba(18, 36, 28, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(18, 36, 28, 0.035) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.stamp {
+  transform: rotate(-8deg);
+  border: 2px solid currentColor;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: #c9b89a transparent;
+}
